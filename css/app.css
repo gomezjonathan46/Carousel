@@ -217,3 +217,51 @@ h2 {
   width: 300px;
   z-index: 2;
 }
+
+footer {
+  margin-top: 30px;
+}
+
+.content-in-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons {
+  width: 86px;
+  padding-top: 2px;
+}
+
+.footer-section-header {
+  color: #ff000f;
+  font-weight: 900;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  width: 100px;
+  border: none;
+  margin-top: 5px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.subscribe-button:hover {
+  background-color: #ec000e;
+  cursor: pointer;
+  color: white;
+}
+
+.map-link {
+  color: black;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.footer-anchor {
+  text-decoration: none;
+  color: black;
+}
