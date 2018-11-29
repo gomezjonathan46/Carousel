@@ -195,10 +195,25 @@ h2 {
 
 .mediaSection {
   padding-top: 7%;
+  padding-bottom: 7%;
   display: flex;
+  justify-content: center;
 }
 
-h3 {
+.mediaSectionDescription {
+  background-repeat: no-repeat;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.mediaFeed {
+  margin-left: 5%;
+}
+
+.followUs {
   font-weight: 900;
   font-size: 40px;
+  width: 300px;
+  z-index: 2;
 }

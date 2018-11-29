@@ -41,3 +41,16 @@ left.addEventListener("click", function() {
   }
   count.textContent = slideNumber+1;
 })
+
+setInterval(function() {
+  if (slideNumber === images.length-1) {
+    images[slideNumber].classList.remove('active');
+    slideNumber = 0;
+    images[slideNumber].classList.add('active');
+  } else {
+    images[slideNumber].classList.remove('active');
+    slideNumber++;
+    images[slideNumber].classList.add('active');
+  }
+  count.textContent = slideNumber+1;
+}, 3000)
