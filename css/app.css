@@ -146,6 +146,30 @@ hr {
   transform: scale(1.03);
 }
 
+h1, h2 {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 50px;
+}
+
+h2 {
+  color: #ff000f;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
+.communityOutreach {
+  display: flex;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1340px;
+}
+
+.center {
+  text-align: center;
 }
