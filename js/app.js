@@ -10,7 +10,7 @@ let active = document.querySelector(".active");
 let maxSlides = document.querySelector(".totalSlides");
 maxSlides.textContent = images.length;
 
-
+let count = document.querySelector(".count");
 
 for (var i = 0; i < images.length; i++) {
   images[i].setAttribute("data-value", i);
@@ -26,6 +26,7 @@ right.addEventListener("click", function() {
     slideNumber++;
     images[slideNumber].classList.add('active');
   }
+  count.textContent = slideNumber+1;
 })
 
 left.addEventListener("click", function() {
@@ -38,4 +39,5 @@ left.addEventListener("click", function() {
     slideNumber--;
     images[slideNumber].classList.add('active');
   }
+  count.textContent = slideNumber+1;
 })

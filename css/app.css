@@ -1,9 +1,36 @@
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+body{
+  margin: 0;
+  font-family: 'Niramit', 'Myriad Pro', sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+}
+
+.carousel{
+  position: relative;
+}
 .images {
   display: none;
-  z-index: -1;
-  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.slides {
+  position: relative;
   top: 0;
   left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .active {
@@ -13,9 +40,7 @@
 .fas {
   font-size: 30px;
   padding: 10px;
-  z-index: 1;
-  color: white;
-
+  z-index: 3;
 }
 
 .fas:hover {
@@ -23,15 +48,104 @@
 }
 
 .carouselNav {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  /* top: -120px; */
   height: 120px;
-  margin-bottom: -120px;
+  bottom: 0;
   width: 110px;
   margin-left: 18%;
+  z-index: 2;
+}
+
+.servicesSection {
+  position: relative;
+  background: orange;
+  padding: 2rem 0;
+  background-color: #ff9735;
+}
+
+.servicesSection:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  top: -100px;
+  left: 0;
+  z-index: 5;
+  border-left: 100vw solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 100px solid #ff9735;
+}
+
+.mediaSection {
+  background-color: #ff000f;
+  margin-top: -35px;
+}
+
+hr {
+  height: 10px;
+  border: none;
+  background: #ff000f;
+  width: 80px;
+  display: block;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.garces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.garcesIntro {
+  max-width: 500px;
+  margin-right: 2%;
+}
+
+.garcesImg {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+}
+
+.signature {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.learn-more-button {
+  border: none;
+  text-decoration: none;
+  background-color: #ff000f;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.learn-more-button:hover {
+  background-color: #ec000e;
+  cursor: pointer;
+}
+
+.expand-animation {
+  cursor: pointer;
+  transition: transform .5s; /* Animation time*/
+}
+
+.expand-animation:hover {
+  transform: scale(1.03);
+}
+
+h1 {
+  font-size: 50px;
 }
