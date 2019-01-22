@@ -17,6 +17,7 @@ for (var i = 0; i < images.length; i++) {
 }
 
 right.addEventListener("click", function() {
+  clearInterval(sliderLoop);
   if (slideNumber === images.length-1) {
     images[slideNumber].classList.remove('active');
     slideNumber = 0;
@@ -30,6 +31,7 @@ right.addEventListener("click", function() {
 })
 
 left.addEventListener("click", function() {
+  clearInterval(sliderLoop);
   if (slideNumber === 0) {
     images[slideNumber].classList.remove('active');
     slideNumber = images.length-1;
@@ -42,7 +44,7 @@ left.addEventListener("click", function() {
   count.textContent = slideNumber+1;
 })
 
-setInterval(function() {
+ var sliderLoop = setInterval(function() {
   if (slideNumber === images.length-1) {
     images[slideNumber].classList.remove('active');
     slideNumber = 0;

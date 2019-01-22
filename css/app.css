@@ -1,6 +1,7 @@
 .container {
-  margin-left: 50px;
-  margin-right: 50px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body{
@@ -102,6 +103,34 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
+#slide {
+  animation: slide 3s;
+}
+
+@keyframes slide {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+/* #slide {
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+} */
 
 .garcesIntro {
   max-width: 500px;
@@ -220,6 +249,12 @@ h2 {
 
 footer {
   margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content-in-columns {
